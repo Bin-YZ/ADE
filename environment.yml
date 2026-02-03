@@ -5,21 +5,16 @@ channel_priority: strict
 
 dependencies:
   - python=3.11
-  - pip
+  - pip=25.*
 
-  # FEniCSx stack
-  - fenics-dolfinx=0.9
-  - mpi4py
-  - petsc4py
+  # FEniCSx stack (pin to compatible minor series)
+  - fenics-dolfinx=0.9.*
+  - mpi4py=4.1.*
+  - petsc4py=3.23.*
 
   # common tools
-  - numpy
-  - scipy
-  - matplotlib
-  - pandas
-  - jupyterlab
-
-  # optional (only if you need it)
-  # - gmsh
-  # - python-gmsh
-  # - pyvista
+  - numpy=2.3.*
+  - scipy=1.16.*
+  - matplotlib=3.10.*
+  - pandas=2.3.*
+  - jupyterlab=4.4.*
